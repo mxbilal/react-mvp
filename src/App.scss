@@ -1,6 +1,71 @@
+@mixin flex($direction, $gap) {
+  display: flex;
+  flex-direction: $direction;
+  gap: $gap;
+}
+
+body {
+  background-color: azure;
+  font-family: cursive;
+}
+
 .baching {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.layout-main {
+  header {
+    border-bottom: 1px solid gray;
+    position: sticky;
+    top: 0;
+    background: azure;
+    padding: 5px;
+
+    h2 {
+      line-height: 0
+    }
+  }
+
+  .layout-middle {
+    @include flex(row, 20px);
+
+    .sidebar {
+      @include flex(column, 10px);
+      border-right: 1px solid black;
+      height: 86vh;
+      padding: 10px;
+      position: sticky;
+      top: 50px;
+
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.intersection-ob-main {
+  @include flex(row, 40px);
+
+  div:first-child {
+    @include flex(column, 10px);
+    flex: 1 1 80%;
+  }
+
+  .observer-card {
+    padding: 20px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    opacity: 0;
+    transform: translateX(100px);
+    transition: 150ms;
+  }
+
+  .show {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
