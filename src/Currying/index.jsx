@@ -20,7 +20,7 @@ const Currying = () => {
         <input value={count} onChange={handleChange(setCount)} />
       </div>
       <div>
-        <img src='../assets/img/currying.png' />
+        <img width={600} height={500} src={codeImage} />
       </div>
     </div>
   )
