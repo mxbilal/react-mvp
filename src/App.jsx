@@ -7,6 +7,8 @@ import AutomaticBaching from './AutomaticBaching';
 import WebWorkers from './WebWorkers';
 import IntersectionObserver from './IntersectionObserver';
 import HomePage from './HomePage'
+import GeneralDocs from './GeneralDocs';
+import Currying from './Currying';
 
 const routes = [
   {
@@ -24,6 +26,14 @@ const routes = [
   {
     path: '/intersection-observers',
     element: <IntersectionObserver />
+  },
+  {
+    path: '/general',
+    element: <GeneralDocs />
+  },
+  {
+    path: '/currying',
+    element: <Currying />
   },
 ]
 function App() {
