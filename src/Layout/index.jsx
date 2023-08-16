@@ -15,6 +15,7 @@ const Layout = ({ children }) => {
           <Link to='/intersection-observers' >Intersection Observers</Link>
           <Link to='/general' >General Docs</Link>
           <Link to='/currying' >Currying</Link>
+          <Link to='/usetransition' >Use Transition</Link>
         </div>
         {children}
       </div>

@@ -9,6 +9,7 @@ import IntersectionObserver from './IntersectionObserver';
 import HomePage from './HomePage'
 import GeneralDocs from './GeneralDocs';
 import Currying from './Currying';
+import UseTransition from './UseTransition';
 
 const routes = [
   {
@@ -34,6 +35,10 @@ const routes = [
   {
     path: '/currying',
     element: <Currying />
+  },
+  {
+    path: '/usetransition',
+    element: <UseTransition />
   },
 ]
 function App() {
