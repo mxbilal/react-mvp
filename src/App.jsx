@@ -10,6 +10,7 @@ import HomePage from './HomePage'
 import GeneralDocs from './GeneralDocs';
 import Currying from './Currying';
 import UseTransition from './UseTransition';
+import UseSearchParams from './UseSearchParams';
 
 const routes = [
   {
@@ -39,6 +40,10 @@ const routes = [
   {
     path: '/usetransition',
     element: <UseTransition />
+  },
+  {
+    path: '/use-search-param',
+    element: <UseSearchParams />
   },
 ]
 function App() {

@@ -16,6 +16,7 @@ const Layout = ({ children }) => {
           <Link to='/general' >General Docs</Link>
           <Link to='/currying' >Currying</Link>
           <Link to='/usetransition' >Use Transition</Link>
+          <Link to='/use-search-param' >Use Search Param</Link>
         </div>
         {children}
       </div>
